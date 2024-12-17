@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HEAD chứa thông tin thiết lập cho trình duyệt và Web pages -->
+<head> 
+    <meta charset="UTF-8">
+    <!-- Metadata, such as who authored the page, keywords  -->
+    <meta name="kto" content="html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Document</title>
+</head>
+<!-- BODY chứa nội dung thực tế sẽ được hiển thị trong Web pages -->
+<body>
+    <!-- • Paragraphs
+    • Tables and lists
+    • Images
+    • JavaScript code
+    • PHP code -->
+<h1>Text Layout</h1>
+    <p>định nghĩa một đoạn văn.<hr> Một đoạn văn luôn bắt đầu trên <br>một dòng mới và các trình duyệt tự động thêm một số khoảng trắng (lề) trước và sau một đoạn văn</p>
+    <hr>
+    <pre>Đây là 1 ví dụ về thẻ <pre>. Các khoảng trắng sẽ được giữ nguyên 
+        Ví dụ:
+        1. Dòng 1
+        2. Dòng 2
+    </pre>
+
+<hr>
+<h1>một tiêu đề lớn, in đậm</h1>
+<h2>tiêu đề nhỏ hơn một chút</h2>
+<h3>tiêu đề nhỏ hơn một chút</h3>
+<h4>tiêu đề nhỏ hơn một chút</h4>
+<h5>tiêu đề nhỏ hơn một chút</h5>
+<h6>a tiny heading</h6>
+<hr>
+<h1>Text Appearance</h1>
+<b>specify bold</b>
+<i>specify italics</i>
+<p>normal <big>increase size</big></p>
+<p>normal <small>decrease size</small></p>
+<p>normal <em>put emphasis</em></p>
+<p>normal <strong>put emphasis</strong> </p>
+<p>normal <sub>a subscript</sub></p>
+<p>normal <sup>a superscript</sup></p>
+
+<hr>
+<h1>List</h1>
+<h2>một danh sách có thứ tự</h2>
+<ol>
+    <li>xác định từng mục danh sách</li>
+    <li>xác định từng mục danh sách</li>
+</ol>
+<hr>
+<h2>Danh sách không theo thứ tự</h2>
+<ul>
+    <li>xác định từng mục danh sách</li>
+    <li>xác định từng mục danh sách</li>
+</ul>
+<hr>
+<h2>Danh sách định nghĩa</h2>
+<dl>
+    <dt>Một HTML document có hai yếu tố cấu trúc chính</dt>
+    <dd>HEAD chứa thông tin thiết lập cho trình duyệt và Web pages</dd>
+</dl>
+
+<hr>
+<h1>Hyperlinks</h1>
+<a href="https://www.youtube.com/@Kto-q4y">Channels</a>
+
+<hr>
+<h1>Image</h1>
+<img src="/img/icon_kto.png" height="300" width="300" alt="không hiện được" title="">
+
+<hr>
+<h1>Tables</h1>
+<table>
+    <tr>
+        <th>STT</th>
+        <th>Tên</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Hoa</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Hồng</td>
+    </tr>
+</table>
+
+<hr>
+
+<header> Thẻ này đại diện cho tiêu đề của một phần. </header>
+<nav>Thẻ này đại diện cho một phần của tài liệu dành cho điều hướng</nav>
+
+<article>
+    <header>
+        <h2>Tiêu đề bài viết thứ hai</h2>
+        <p><em>Ngày đăng: 2 tháng 1, 2023</em></p>
+    </header>
+    <p>Đây là nội dung của bài viết thứ hai. Nội dung này cũng có thể bao gồm nhiều thông tin hữu ích cho người đọc.</p>
+    <footer>
+        <p>Người viết: Tác giả B</p>
+    </footer>
+</article>
+
+<figure>
+    <img src="https://via.placeholder.com/400" alt="Hình ảnh minh họa" style="width:100%; max-width:400px;">
+    <figcaption>Hình ảnh minh họa cho ví dụ về thẻ &lt;figure&gt;.</figcaption>
+</figure>
+
+<section>
+    <h2>Liên Hệ</h2>
+    <p>Để biết thêm thông tin, vui lòng liên hệ với chúng tôi qua email hoặc số điện thoại.</p>
+</section>
+
+<aside>
+    <h3>Thông Tin Bổ Sung</h3>
+    <p>Đây là một số thông tin bổ sung liên quan đến bài viết.</p>
+    <ul>
+        <li><a href="#">Liên kết 1</a></li>
+        <li><a href="#">Liên kết 2</a></li>
+        <li><a href="#">Liên kết 3</a></li>
+    </ul>
+</aside>
+
+<footer> Thẻ này đại diện cho chân trang của một phần và có thể chứa thông tin về tác giả, thông tin bản quyền, v.v</footer>
+
+<hr>
+<audio controls>
+    <source src="audio/amthanh.m4a"/>
+    Not supported
+</audio>
+<video controls poster="img/icon_kto.png">
+    <source src="video/dev.mkv">
+    <track src="subtitles_vi.vtt" kind="subtitles" srclang="vi" label="Tiếng Việt" default>
+    <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        Trình duyệt của bạn không hỗ trợ video.
+</video>
+
+<!-- <h2>Nhúng Video</h2>
+    <embed src="video/dev.mkv" type="video/mp4" width="400" height="300" />
+<h2>Nhúng Tài Liệu PDF</h2>
+    <embed src="example.pdf" type="application/pdf" width="600" height="500" /> -->
+
+<canvas id="myCanvas" width="400" height="200"></canvas>
+
+    <script>
+        // Lấy đối tượng canvas và ngữ cảnh vẽ 2D
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+
+        // Vẽ hình chữ nhật
+        ctx.fillStyle = 'blue'; // Màu nền
+        ctx.fillRect(10, 10, 150, 100); // Vẽ hình chữ nhật
+
+        // Vẽ đường viền
+        ctx.strokeStyle = 'red'; // Màu viền
+        ctx.strokeRect(10, 10, 150, 100); // Vẽ đường viền cho hình chữ nhật
+
+        // Vẽ văn bản
+        ctx.fillStyle = 'black'; // Màu văn bản
+        ctx.font = '20px Arial'; // Kiểu chữ
+        ctx.fillText('Hello, Canvas!', 20, 50); // Vẽ văn bản
+    </script>
+<h1>Input</h1>
+
+<input type="button" value="Nhấn tôi">
+<hr>
+<input type="checkbox" id="check1" name="check1">
+<label for="check1">Tùy chọn 1</label>
+<hr>
+<input type="color" id="colorPicker">
+<hr>
+<input type="date" id="dateInput">
+<hr>
+<input type="datetime" id="datetimeInput">
+<hr>
+<input type="datetime-local" id="datetimeLocalInput">
+<hr>
+<input type="email" id="emailInput">
+<hr>
+<input type="file" id="fileInput">
+<hr>
+<input type="hidden" name="hiddenField" value="giá trị ẩn">
+<hr>
+<input type="image" src="img/icon_kto.png" alt="Nút bấm">
+<hr>
+<input type="month" id="monthInput">
+<hr>
+<input type="number" id="numberInput" min="1" max="10">
+<hr>
+<input type="password" id="passwordInput">
+<hr>
+<input type="radio" id="radio1" name="radioGroup" value="option1">
+<label for="radio1">Tùy chọn 1</label>
+<input type="radio" id="radio2" name="radioGroup" value="option2">
+<label for="radio2">Tùy chọn 2</label>
+<hr>
+<input type="range" id="rangeInput" min="0" max="100" value="50">
+<hr>
+<input type="reset" value="Đặt lại">
+<hr>
+<input type="search" id="searchInput" placeholder="Tìm kiếm...">
+<hr>
+<input type="submit" value="Gửi">
+<hr>
+<input type="tel" id="telInput" placeholder="Số điện thoại">
+<hr>
+<input type="text" id="textInput" placeholder="Nhập văn bản">
+<hr>
+<input type="time" id="timeInput">
+<hr>
+<input type="url" id="urlInput" placeholder="https://example.com">
+<hr>
+<input type="week" id="weekInput">
+</body>
+</html>
