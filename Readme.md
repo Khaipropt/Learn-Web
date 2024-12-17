@@ -19,6 +19,7 @@
 ![](img/icon_kto.png)
 # Checkbox
 [] checkbox unchecked
+[ ] checkbox unchecked
 [x] checknox checked
 # Front style
 *in nghiêng*
