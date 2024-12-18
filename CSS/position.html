@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            border: 1px solid black;
+            padding: 20px;
+            height: 1500px; /* Để có thể cuộn trang */
+        }
+        .static-box {
+            position: static; /* Mặc định, không có tác dụng của top, right, bottom, left */
+            border: 1px solid blue;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .relative-box {
+            position: relative; /* Định vị tương đối, có thể di chuyển bằng top, right, bottom, left */
+            top: 20px; /* Di chuyển xuống 20px */
+            left: 10px; /* Di chuyển sang phải 10px */
+            border: 1px solid green;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .absolute-box {
+            position: absolute; /* Định vị tuyệt đối so với phần tử cha gần nhất có position khác static */
+            top: 50px; /* Di chuyển xuống 50px từ phần tử cha */
+            left: 20px; /* Di chuyển sang phải 20px từ phần tử cha */
+            border: 1px solid red;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .fixed-box {
+            position: fixed; /* Định vị cố định so với viewport */
+            top: 10px; /* Luôn ở 10px từ trên cùng của cửa sổ trình duyệt */
+            right: 10px; /* Luôn ở 10px từ bên phải của cửa sổ trình duyệt */
+            border: 1px solid purple;
+            padding: 10px;
+        }
+        .sticky-box {
+            position: sticky; /* Dính vào vị trí khi cuộn đến */
+            top: 0; /* Dính vào 0px từ trên cùng */
+            background-color: yellow; /* Màu nền để dễ nhận diện */
+            border: 1px solid orange;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Phần tử với position: static -->
+        <div class="static-box">Static Box (Mặc định)</div>
+
+        <!-- Phần tử với position: relative -->
+        <div class="relative-box">Relative Box (Di chuyển 20px xuống và 10px sang phải)</div>
+
+        <!-- Phần tử với position: absolute -->
+        <div class="absolute-box">Absolute Box (Định vị tuyệt đối so với phần tử cha)</div>
+
+        <!-- Phần tử với position: sticky -->
+        <div class="sticky-box">Sticky Box (Dính vào vị trí khi cuộn)</div>
+
+        <p>Scroll down to see the sticky effect.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>...</p>
+        <p>More content to enable scrolling...</p>
+        <p>...</p>
+        <p>More content to enable scrolling...</p>
+        <p>...</p>
+        <p>More content to enable scrolling...</p>
+        <p>...</p>
+        <p>More content to enable scrolling...</p>
+        <p>...</p>
+        <p>More content to enable scrolling...</p>
+        <p>...</p>
+        <p>More content to enable scrolling...</p>
+    </div>
+
+    <!-- Phần tử với position: fixed -->
+    <div class="fixed-box">Fixed Box (Luôn hiển thị ở góc trên bên phải)</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Example</title>
+    <style>
+        .relative-box {
+            position: relative; /* Định vị tương đối */
+            width: 200px;
+            height: 200px;
+            
+            background-color: lightblue;
+            margin: 20px;
+        }
+        .relative-box2 {
+            position: relative; /* Định vị tương đối */
+            width: 200px;
+            height: 200px;
+
+            background-color: rgb(214, 56, 16);
+
+        }
+        .absolute-box {
+            position: absolute; /* Định vị tuyệt đối */
+            top: 50px; /* Di chuyển 50px từ trên cùng của phần tử cha */
+            left: 50px; /* Di chuyển 50px từ bên trái của phần tử cha */
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative-box">
+        Relative Box
+        <div class="relative-box2"></div>
+        <div class="absolute-box">Absolute Box</div>
+    </div>
+</body>
+</html>
