@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <title>Dice Statistics</title>
+    <script type="text/javascript"
+    src="random.js">
+    </script>
+    </head>
+    <body>
+    <script type="text/javascript">
+       const numRolls = 60000;
+       const diceSides = 6;
+       let rolls = new Array(dieSides+1);
+       for (i = 1; i < rolls.length; i++) {
+           rolls[i] = 0;
+       }
+       for(i = 1; i <= numRolls; i++) {
+           rolls[randomInt(1, dieSides)]++;
+       }
+       for (i = 1; i < rolls.length; i++) {
+           document.write("Number of " + i + "'s = " +
+                          rolls[i] + "<br />");
+       }
+     </script>
+    </body>
+    </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Time when page was loaded:
+    <script type="text/javascript">
+      now = new Date();
+      document.write("<p>" + now + "</p>");
+      time = "AM";
+      hours = now.getHours();
+      if (hours > 12) {
+          hours -= 12;
+          time = "PM"
+      }
+      else if (hours == 0) {
+          hours = 12;
+      }
+      document.write("<p>" + hours + ":" +
+      now.getMinutes() + ":" +
+      now.getSeconds() + " " +
+      time + "</p>");
+    </script>
+    <p>Elapsed time in this year:
+        <script type="text/javascript">
+          now = new Date();
+          newYear = new Date(2024,0,1);
+          secs = Math.round((now-newYear)/1000);
+          days = Math.floor(secs / 86400);
+          secs -= days*86400;
+          hours = Math.floor(secs / 3600);
+          secs -= hours*3600;
+          minutes = Math.floor(secs / 60);
+          secs -= minutes*60
+          document.write(days + " days, " +
+                         hours + " hours, " +
+                         minutes + " minutes, and " +
+                         secs + " seconds.");
+        </script>
+        </p>
+        
+        <table width="100%">
+            <tr>
+              <td><i>
+                <script type="text/javascript">
+                document.write(document.URL);
+                </script>
+              </i></td>
+              <td style="text-align: right;"><i>
+                <script type="text/javascript">
+         document.write(document.lastModified);
+                </script>
+              </i></td>
+            </tr>
+          </table>
+   </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Function Example</title>
+</head>
+<body>
+    <button id="myButton">Nhấp vào tôi!</button>
+
+    <script>
+        // Hàm callback
+        function showMessage() {
+            alert('Bạn đã nhấp vào nút!');
+        }
+
+        // Lấy nút từ DOM
+        const button = document.getElementById('myButton');
+
+        // Gán hàm showMessage làm callback cho sự kiện click
+        button.addEventListener('click', showMessage);
+    </script>
+</body>
+</html>
