@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+    <style>
+        #parent {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 10px;
+        }
+        .child {
+            background-color: #f0f0f0;
+            margin: 5px 0;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="parent">
+        <div class="child" id="reference">Reference Node</div>
+    </div>
+
+    <button id="appendBtn">Append Child</button>
+    <button id="prependBtn">Prepend Child</button>
+    <button id="beforeBtn">Insert Before</button>
+    <button id="afterBtn">Insert After</button>
+    <button id="replaceBtn">Replace Node</button>
+
+    <script>
+        const parent = document.getElementById('parent');
+        const referenceNode = document.getElementById('reference');
+
+        // Append
+        document.getElementById('appendBtn').addEventListener('click', () => {
+            const newChild = document.createElement('div');
+            newChild.className = 'child';
+            newChild.textContent = 'Appended Child';
+            parent.append(newChild);
+        });
+
+        // Prepend
+        document.getElementById('prependBtn').addEventListener('click', () => {
+            const newChild = document.createElement('div');
+            newChild.className = 'child';
+            newChild.textContent = 'Prepended Child';
+            parent.prepend(newChild);
+        });
+
+        // Before
+        document.getElementById('beforeBtn').addEventListener('click', () => {
+            const newNode = document.createElement('div');
+            newNode.className = 'child';
+            newNode.textContent = 'Inserted Before Reference Node';
+            referenceNode.before(newNode);
+        });
+
+        // After
+        document.getElementById('afterBtn').addEventListener('click', () => {
+            const newNode = document.createElement('div');
+            newNode.className = 'child';
+            newNode.textContent = 'Inserted After Reference Node';
+            referenceNode.after(newNode);
+        });
+
+        // Replace
+        document.getElementById('replaceBtn').addEventListener('click', () => {
+            const newNode = document.createElement('div');
+            newNode.className = 'child';
+            newNode.textContent = 'Replaced Node';
+            referenceNode.replaceWith(newNode);
+        });
+    </script>
+
+</body>
+</html>

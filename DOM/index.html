@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="elem">
+        <div id="elem-content">Element</div>
+        <div>Other</div>
+    </div>
+    <div class="example">
+        <h1>hi</h1>
+    </div>
+    <script>
+        let elem = document.getElementById('elem');
+
+        elem.style.background = 'red';
+
+    </script>
+
+    <h1>Đây là tiêu đề 1</h1>
+    <h1>Đây là tiêu đề 2</h1>
+
+    <script>
+        // Lấy tất cả các thẻ <h1>
+        var headings = document.getElementsByTagName("h1");
+        
+        // Thay đổi nội dung của thẻ <h1> đầu tiên
+        headings[0].innerHTML = "Nội dung đã được thay đổi!";
+    </script>
+
+    <h1 class="title">Tiêu đề 1</h1>
+    <h1 class="title">Tiêu đề 2</h1>
+    <p class="description">Đây là mô tả 1.</p>
+    <p class="description">Đây là mô tả 2.</p>
+
+    <script>
+        // Lấy tất cả các thẻ có lớp "title"
+        var titles = document.getElementsByClassName("title");
+        
+        // Thay đổi nội dung của tất cả các thẻ có lớp "title"
+        for (var i = 0; i < titles.length; i++) {
+            titles[i].innerHTML = "Nội dung đã được thay đổi cho tiêu đề " + (i + 1);
+        }
+    </script>
+    <h1 class="title">Tiêu đề 1</h1>
+    <h1 class="title">Tiêu đề 2</h1>
+    <p class="description">Đây là mô tả 1.</p>
+    <p class="description">Đây là mô tả 2.</p>
+    
+    <script>
+        // Lấy tất cả các thẻ <h1> có lớp "title"
+        var titles = document.querySelectorAll("h1.title");
+        
+        // Thay đổi nội dung của tất cả các thẻ <h1> có lớp "title"
+        titles.forEach(function(title, index) {
+            title.innerHTML = "Nội dung đã được thay đổi cho tiêu đề " + (index + 1);
+        });
+    </script>
+    <h1>Tiêu đề</h1>
+    <p class="description">Đây là một đoạn văn bản.</p>
+    
+    <script>
+        // Lấy phần tử <h1>
+        var heading = document.querySelector("h1");
+        
+        // Kiểm tra nodeType của phần tử <h1>
+        console.log("Node Type của <h1>: " + heading.nodeType); // Kết quả: 1
+    
+        // Lấy văn bản bên trong <h1>
+        var headingText = heading.firstChild;
+        
+        // Kiểm tra nodeType của văn bản bên trong <h1>
+        console.log("Node Type của văn bản bên trong <h1>: " + headingText.nodeType); // Kết quả: 3
+    
+        // Lấy phần tử <p>
+        var paragraph = document.querySelector("p.description");
+        
+        // Kiểm tra nodeType của phần tử <p>
+        console.log("Node Type của <p>: " + paragraph.nodeType); // Kết quả: 1
+    
+        // Lấy văn bản bên trong <p>
+        var paragraphText = paragraph.firstChild;
+        
+        // Kiểm tra nodeType của văn bản bên trong <p>
+        console.log("Node Type của văn bản bên trong <p>: " + paragraphText.nodeType); // Kết quả: 3
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window History Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ví dụ về Lịch Sử Duyệt Web</h1>
+    <p>Nhấn nút dưới đây để quay lại trang trước đó hoặc tiến tới trang tiếp theo.</p>
+
+    <button id="backBtn">Quay lại</button>
+    <button id="forwardBtn">Tiến</button>
+
+    <script>
+        // Thêm sự kiện cho nút Quay lại
+        document.getElementById('backBtn').addEventListener('click', () => {
+            history.back();
+        });
+
+        // Thêm sự kiện cho nút Tiến
+        document.getElementById('forwardBtn').addEventListener('click', () => {
+            history.forward();
+        });
+    </script>
+
+</body>
+</html>

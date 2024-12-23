@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Location Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Thông tin về URL</h1>
+    <p>URL hiện tại: <span id="currentUrl"></span></p>
+    <p>Tên miền: <span id="domainName"></span></p>
+    <p>Đường dẫn: <span id="pathName"></span></p>
+    <p>Giao thức: <span id="protocol"></span></p>
+
+    <button id="redirectBtn">Chuyển hướng đến Google</button>
+
+    <script>
+        // Hiển thị thông tin về URL
+        document.getElementById('currentUrl').textContent = window.location.href;
+        document.getElementById('domainName').textContent = window.location.hostname;
+        document.getElementById('pathName').textContent = window.location.pathname;
+        document.getElementById('protocol').textContent = window.location.protocol;
+
+        // Chuyển hướng đến một trang mới
+        document.getElementById('redirectBtn').addEventListener('click', () => {
+            window.location.href = 'https://www.google.com';
+        });
+    </script>
+
+</body>
+</html>

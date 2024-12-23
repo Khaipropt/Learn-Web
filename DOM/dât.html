@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ví dụ về data</title>
+</head>
+<body>
+
+<div id="myDiv">
+    <h1>Tiêu đề</h1>
+    <p>Đây là một đoạn văn bản.</p>
+</div>
+
+<script>
+    // Lấy nút văn bản bên trong <p>
+    var paragraphTextNode = document.querySelector("p").firstChild;
+
+    // Lấy dữ liệu của nút văn bản
+    console.log("Dữ liệu ban đầu:", paragraphTextNode.data); // Kết quả: "Đây là một đoạn văn bản."
+
+    // Thay đổi dữ liệu của nút văn bản
+    paragraphTextNode.data = "Đoạn văn bản đã được thay đổi!";
+    console.log("Dữ liệu sau khi thay đổi:", paragraphTextNode.data); // Kết quả: "Đoạn văn bản đã được thay đổi!"
+</script>
+
+</body>
+</html>

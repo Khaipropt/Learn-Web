@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Object Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Thông tin về Màn Hình</h1>
+    <p>Chiều rộng màn hình: <span id="screenWidth"></span> px</p>
+    <p>Chiều cao màn hình: <span id="screenHeight"></span> px</p>
+    <p>Chiều rộng khả dụng: <span id="availWidth"></span> px</p>
+    <p>Chiều cao khả dụng: <span id="availHeight"></span> px</p>
+    <p>Độ sâu màu: <span id="colorDepth"></span> bit</p>
+    <p>Độ sâu pixel: <span id="pixelDepth"></span> bit</p>
+
+    <script>
+        // Hiển thị thông tin về màn hình
+        document.getElementById('screenWidth').textContent = screen.width;
+        document.getElementById('screenHeight').textContent = screen.height;
+        document.getElementById('availWidth').textContent = screen.availWidth;
+        document.getElementById('availHeight').textContent = screen.availHeight;
+        document.getElementById('colorDepth').textContent = screen.colorDepth;
+        document.getElementById('pixelDepth').textContent = screen.pixelDepth;
+    </script>
+
+</body>
+</html>

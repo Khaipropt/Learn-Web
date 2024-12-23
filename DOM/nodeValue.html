@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ví dụ về nodeValue</title>
+</head>
+<body>
+
+<div id="myDiv">
+    <h1>Tiêu đề</h1>
+    <p>Đây là một đoạn văn bản.</p>
+</div>
+
+<script>
+    // Lấy nút văn bản bên trong <h1>
+    var headingTextNode = document.querySelector("h1").firstChild;
+
+    // Lấy giá trị của nút văn bản
+    console.log("Giá trị ban đầu:", headingTextNode.nodeValue); // Kết quả: "Tiêu đề"
+
+    // Thay đổi giá trị của nút văn bản
+    headingTextNode.nodeValue = "Tiêu đề đã được thay đổi!";
+    console.log("Giá trị sau khi thay đổi:", headingTextNode.nodeValue); // Kết quả: "Tiêu đề đã được thay đổi!"
+</script>
+
+</body>
+</html>

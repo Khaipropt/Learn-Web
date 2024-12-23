@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ví dụ về Child Nodes</title>
+</head>
+<body>
+    <!-- Children: firstChild, lastChild -->
+<div id="parent">
+    <h1>Tiêu đề</h1>
+    <p>Đoạn văn bản.</p>
+    <!-- Đây là một chú thích -->
+</div>
+
+<script>
+    // Lấy nút cha
+    var parentNode = document.getElementById("parent");
+
+    // Lấy tất cả các nút con
+    var childNodes = parentNode.childNodes;
+
+    // In ra số lượng và các nút con
+    console.log("Số lượng nút con:", childNodes.length);
+    childNodes.forEach(function(node, index) {
+        console.log("Nút con " + index + ":", node.nodeName, "Giá trị:", node.nodeValue);
+    });
+</script>
+
+</body>
+</html>

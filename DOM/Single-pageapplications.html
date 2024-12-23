@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Application Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: blue;
+        }
+        .content {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" id="homeLink">Trang Chủ</a>
+        <a href="#" id="aboutLink">Giới Thiệu</a>
+        <a href="#" id="contactLink">Liên Hệ</a>
+    </nav>
+
+    <div class="content" id="content">
+        <h2>Trang Chủ</h2>
+        <p>Chào mừng bạn đến với ứng dụng Single Page Application!</p>
+    </div>
+
+    <script>
+        // Hàm để cập nhật nội dung
+        function loadContent(page) {
+            const contentDiv = document.getElementById('content');
+            if (page === 'home') {
+                contentDiv.innerHTML = `
+                    <h2>Trang Chủ</h2>
+                    <p>Chào mừng bạn đến với ứng dụng Single Page Application!</p>
+                `;
+            } else if (page === 'about') {
+                contentDiv.innerHTML = `
+                    <h2>Giới Thiệu</h2>
+                    <p>Đây là một ứng dụng mẫu để minh họa cách hoạt động của SPA.</p>
+                `;
+            } else if (page === 'contact') {
+                contentDiv.innerHTML = `
+                    <h2>Liên Hệ</h2>
+                    <p>Để biết thêm thông tin, vui lòng liên hệ qua email: example@example.com</p>
+                `;
+            }
+        }
+
+        // Thêm sự kiện cho các liên kết
+        document.getElementById('homeLink').addEventListener('click', (e) => {
+            e.preventDefault(); // Ngăn chặn hành vi mặc định
+            loadContent('home');
+        });
+
+        document.getElementById('aboutLink').addEventListener('click', (e) => {
+            e.preventDefault();
+            loadContent('about');
+        });
+
+        document.getElementById('contactLink').addEventListener('click', (e) => {
+            e.preventDefault();
+            loadContent('contact');
+        });
+
+        // Tải nội dung trang chủ khi ứng dụng được khởi động
+        loadContent('home');
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ví dụ về innerHTML</title>
+</head>
+<body>
+
+<div id="myDiv">
+    <h1>Tiêu đề</h1>
+    <p>Đây là một đoạn văn bản.</p>
+</div>
+
+<script>
+    // Lấy nội dung bên trong <div>
+    var content = document.getElementById("myDiv").innerHTML;
+    console.log("Nội dung ban đầu:", content);
+
+    // Thay đổi nội dung bên trong <div>
+    document.getElementById("myDiv").innerHTML = "<h2>Nội dung đã được thay đổi!</h2>";
+</script>
+
+</body>
+</html>

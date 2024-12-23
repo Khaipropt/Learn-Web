@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ví dụ về outerHTML</title>
+</head>
+<body>
+
+<div id="myDiv">
+    <h1>Tiêu đề</h1>
+    <p>Đây là một đoạn văn bản.</p>
+</div>
+
+<script>
+    // Lấy toàn bộ HTML của <div>
+    var fullContent = document.getElementById("myDiv").outerHTML;
+    console.log("HTML ban đầu:", fullContent);
+
+    // Thay đổi toàn bộ HTML của <div>
+    document.getElementById("myDiv").outerHTML = "<section><h2>Nội dung đã được thay đổi!</h2></section>";
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator Object Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Thông tin về Trình Duyệt</h1>
+    <p>Phiên bản trình duyệt: <span id="appVersion"></span></p>
+    <p>Thông tin User Agent: <span id="userAgent"></span></p>
+    <p>Nền tảng: <span id="platform"></span></p>
+    <p>Ngôn ngữ: <span id="language"></span></p>
+    <p>Trạng thái trực tuyến: <span id="onlineStatus"></span></p>
+    <p>Java được kích hoạt: <span id="javaEnabled"></span></p>
+
+    <script>
+        // Hiển thị thông tin về trình duyệt
+        document.getElementById('appVersion').textContent = navigator.appVersion;
+        document.getElementById('userAgent').textContent = navigator.userAgent;
+        document.getElementById('platform').textContent = navigator.platform;
+        document.getElementById('language').textContent = navigator.language;
+        document.getElementById('onlineStatus').textContent = navigator.onLine ? 'Có' : 'Không';
+        document.getElementById('javaEnabled').textContent = navigator.javaEnabled() ? 'Có' : 'Không';
+    </script>
+
+</body>
+</html>
