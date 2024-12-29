@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+        
+                // React
+        const ul = React.createElement(
+        'ul',
+        null,
+        React.createElement(
+            'li',
+            null,
+            'JavaScript'
+        ),
+        React.createElement('li', {}, 'ReactJS')
+        );
+        console.log(ul);
+        // @18
+        const domContainer = document.getElementById('root');
+        const root = ReactDOM.createRoot(domContainer);
+        // root.render(ul);
+        </script>
+        <script type="text/babel">
+            const reactCourse = "React f8";
+
+            const ula = <ul>
+                <li>JavaScript2</li>
+                <li>reactjs2</li>
+                </ul>;
+        // const domContainer = document.getElementById('root');
+        // const root = ReactDOM.createRoot(domContainer);
+        root.render(ula);
+        </script>
+        
+</body>
+</html>
