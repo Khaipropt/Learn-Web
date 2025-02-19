@@ -1,27 +1,33 @@
 /**
- * Gioi thieu 1 so ham built-in
- * 1.Alert
- * 2.console
- * 3.Vonfirm
- * 4.Prompt
- * 5.Set timeout
- * 6.Set interval
- */
+ * Gioi thieu ve toan tu trong JavaScript
+ * 1. Toan tu so hoc - Arithmectic
+ * 2. Toan tu gan - Assignment
+ * 3. Toan tu so sanh - Comparison
+ * 4. Toan tu logiv - Logical
+ 
+*/
 
-var fullName = 'Duong Quang Khai'
+// 1. Toan tu so hoc - Arithmectic
+// var a = 1 * 2;
+// console.log(a);
 
-console.warn(fullName)
-console.error(fullName)
-console.log(fullName)
+// 2. Toan tu gan - Assignment
+var fullName = 'Duong Quang Khai';
 
-// confirm('Xac nhan ban du tuoi !')
+// 3. Toan tu so sang - Comparison
 
-// prompt('Xac nhan ban du tuoi')
+// var a = 1;
+// var b = 2;
 
-// setTimeout(function() {
-//     alert("Thong bao")
-// }, 1000)
+// if( a < b ) {
+//     alert("Dung");
+// }
 
-setInterval(function() {
-    console.log("Day la log " + Math.random())  
-}, 1000)
+// 4. Toan tu logic - Logical
+
+var a = 1;
+var b = 2;
+
+if( a > 0 && b > 0 ) {
+    alert('a va b lon hon 0');
+}
