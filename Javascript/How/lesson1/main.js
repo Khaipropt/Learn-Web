@@ -1,19 +1,16 @@
-/** Toan tu so hoc
- * + --> Cong
- * - --> Tru
- * * --> Nhan
- * ** --> Luy thua
- * / --> Chia
- * % --> Chia lay phan du
- * ++ --> Tang 1 gia tri
- * -- --> Giam 1 gia tri
+/** Toan tu gan
+ * Toan tu    Vi du       Tuong duong
+ * =          x = y        x = y
+ * +=         x += y       x = x + y
+ * -=         x -= y       x = x - y
+ * *=         x *= y       x = x * y
+ * /=         x /= y       x = x / y
+ * **=        x **= y      x = x ** y
+ * 
  *
  */
 
-var a = 4;
-var b = 2;
+var a = 2;
 
-var c = a++;
-c++;
- 
-console.log(c); 
+console.log(a / 3)
+
