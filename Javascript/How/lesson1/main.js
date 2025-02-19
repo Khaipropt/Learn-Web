@@ -1,38 +1,27 @@
-// Các bạn xem ví dụ tại đây:
-
-// 1. Dưới đây là một lời gọi hàm alert() bị comments,
-// vì vậy, không có hộp thoại nào xuất hiện.
-// 👉 Bạn có thể uncomment để thấy hộp thoại được bật lên.
-
-// alert('Xin chào anh em nhé!');
-
-
-/* Đây là
-cú pháp
-comment trên nhiều dòng */
-
 /**
- * Cách trình bày đẹp cho cú pháp comments
- * trên nhiều dòng là như thế này
+ * Gioi thieu 1 so ham built-in
+ * 1.Alert
+ * 2.console
+ * 3.Vonfirm
+ * 4.Prompt
+ * 5.Set timeout
+ * 6.Set interval
  */
 
-// Khai bao bien
+var fullName = 'Duong Quang Khai'
 
-/* 
-    Noi dung o day la comment
-*/
+console.warn(fullName)
+console.error(fullName)
+console.log(fullName)
 
-/**
- * Khai bao bien
- * Khai bao...
- */
+// confirm('Xac nhan ban du tuoi !')
 
-var fullName = 'Duong Quang Khai';
-var age = 21; // Khai bao tuoi
+// prompt('Xac nhan ban du tuoi')
 
+// setTimeout(function() {
+//     alert("Thong bao")
+// }, 1000)
 
-// Goi ham thong bao 
-/*
-alert(fullName);
-alert(age);
-*/
+setInterval(function() {
+    console.log("Day la log " + Math.random())  
+}, 1000)
