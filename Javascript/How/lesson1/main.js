@@ -1,16 +1,9 @@
-/** Toan tu gan
- * Toan tu    Vi du       Tuong duong
- * =          x = y        x = y
- * +=         x += y       x = x + y
- * -=         x -= y       x = x - y
- * *=         x *= y       x = x * y
- * /=         x /= y       x = x / y
- * **=        x **= y      x = x ** y
- * 
- *
- */
+// Toan tu ++ --
+// Prefix & Postfix
 
-var a = 2;
+var number = 6;
 
-console.log(a / 3)
+var output = number ++  + --number;
 
+
+console.log('output: ', output);
